@@ -61,8 +61,8 @@ module.exports = {
                 .addComponents(
                     new ButtonBuilder()
                         .setStyle(ButtonStyle.Link)
-                        .setLabel('Server Support')
-                        .setURL(`https://discord.gg/developer-tools`))
+                        .setLabel('Playlist Spotify')
+                        .setURL(`https://open.spotify.com/playlist/37i9dQZF1DXb7WmotStdsj`))
 
             interaction.reply({ embeds: [embed], components: [row], ephemeral: true })
         } catch (err) {
