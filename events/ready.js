@@ -16,7 +16,7 @@ module.exports = {
       console.log((`Servers: ${client.guilds.cache.size}`).magenta, (`Users: ${client.guilds.cache
         .reduce((a, b) => a + b.memberCount, 0)
         .toLocaleString()}`).yellow, (`Commands: ${client.commands.size}`).green);
-      client.user.setStatus("idle")
+      client.user.setStatus("online")
       client.user.setActivity(`${prefix}help | SlashCommand`, { type: ActivityType.Listening })
       setInterval(async () => {
         client.guilds.cache.forEach(async g => {
