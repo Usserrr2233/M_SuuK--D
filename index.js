@@ -23,8 +23,6 @@ const { joinVoiceChannel } = require('@discordjs/voice');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const db = require('quick.db');
-const colors = require("colors");
 // const pathToFfmpeg = require('ffmpeg-static')
 // console.log(pathToFfmpeg)
 
