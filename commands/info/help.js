@@ -57,11 +57,7 @@ module.exports = {
                         .setLabel('Invite Bot')
                         .setURL(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`))
 
-                .addComponents(
-                    new ButtonBuilder()
-                        .setStyle(ButtonStyle.Link)
-                        .setLabel('Playlist Spotify')
-                        .setURL(`https://open.spotify.com/playlist/37i9dQZF1DXb7WmotStdsj`))
+        
 
             message.reply({ embeds: [embed], components: [row] })
         } catch (err) {
