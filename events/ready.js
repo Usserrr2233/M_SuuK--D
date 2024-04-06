@@ -17,7 +17,7 @@ module.exports = {
         .reduce((a, b) => a + b.memberCount, 0)
         .toLocaleString()}`).yellow, (`Commands: ${client.commands.size}`).green);
       client.user.setStatus("dnd")
-      client.user.setActivity(`${prefix}help | SlashCommand`, { type: ActivityType.Listening })
+      client.user.setActivity(`♡⃕  𝖫𝗈𝗏𝖾 𝗎𝗎 !𝖣`, { type: ActivityType.Listening })
       setInterval(async () => {
         client.guilds.cache.forEach(async g => {
           let vch = await db.get(`24_7_${g.id}`)
